@@ -35,3 +35,30 @@ class Variables():
         time.sleep(5)
         
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+menu=1
+while menu==1:
+    print("*"*20,"Bienvenido al Menu ","*"*20)
+    pv=float(input("Ingresa el precio de Venta Unitario: "))
+    cv=float(input("Ingresa el los Costos Variables : "))
+    cf=float(input("Ingresa los Costos Fijos : "))
+    objeto=Variables(pv,cv,cf)
+    objeto.Calcular()
+    print("1=SI\n2=NO")
+    menu=int(input("Desea seguir con el programa : "))
